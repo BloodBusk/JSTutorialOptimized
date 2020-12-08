@@ -1,0 +1,109 @@
+                <div id="lesson7" class="lesson">
+                    <h3>Lesson 7</h3>
+                    <h2>if-else statements</h2>
+                    <p>
+                        If Else statements are a part of the programming fundamentals. Basically, they tell a statement, that “if…”, “or else…” but you can use it much more advanced than that. In our game, we want to use it to:
+                    </p>
+                    <ol>
+                        <li>
+                            Check which player guesses correctly, give them a point and reset the turn.
+                        </li>
+                        <li>
+                            Declare a winner and reset the game, so that we can play again.
+                        </li>
+                    </ol>
+                    <p>
+                        But how do we do that?
+                    </p>
+                    <p>
+                        Let’s start with the first one, checking which player guesses correctly and gains a point. So why do we want to use an if else statement for this? Because it makes sense. Why make something complicated, when we can just say “If player1 guesses correctly, give them a point. Else, don’t”?
+                    </p>
+                    <p>
+                        To make this, we first make the statement.
+                    </p>
+                    <pre>
+                        <code class="language-js">
+        if ($(&#x22;player1High&#x22;).checked) {
+
+        }
+                        </code></pre>
+                    <p>
+                        This statement says: If player1High is checked, do something. This is the base of our if statement, because we want to be able to check if the player clicked.
+                    </p>
+                    <p>
+                        We want the function to be able to check if we guessed right, which we will do so:
+                    </p>
+                    <pre>
+                        <code class="language-js">
+        if ($("player1High").checked) { 
+            if (arr[arr.length - 1] > arr[arr.length - 2]) {
+                console.log("correct");
+                $("player1Points").innerHTML++;
+            } else {
+                console.log("false");
+            }
+        }
+        if ($("player1Low").checked) {
+            if (arr[arr.length - 1] < arr[arr.length - 2]) {
+                console.log("correct");
+                $("player1Points").innerHTML++;
+            } else {
+                console.log("false");
+            }
+        }
+                        </code></pre>
+                    <p>
+                        In this snippet, we make an if statement within an if statement. We do this, because we want to make sure that it knows if you guessed correctly or not. We do this by making a correct or false answer which says “If(guess) is correct, give a point to player1Points innerHtml and if it’s not correct, do not give a point.
+                    </p>
+                    <p>
+                        This is now our first if-else statement, which makes sure that we are able to get points if we guess correctly.
+                    </p>
+                    <p>
+                        For our game, we want to be able to use these commands, when we press the roll button, so that the gameplay is smooth, and so that when we eventually do get a point, it resets so that we can use it again. We do this by wrapping it in a function, so that we can easily access it later when we need it. Let’s call it player1Turn. After our if else statement, we need to reset the players turn, which we will do by setting id”).checked = false;
+                    </p>
+                    <pre>
+                        <code class="language-js">
+        let player1Turn = () => {
+            if ($("player1High").checked) {            
+                if (arr[arr.length - 1] > arr[arr.length - 2]) {
+                    console.log("correct");
+                    $("player1Points").innerHTML++;
+                } else {
+                    console.log("false");
+                }
+            }
+            if ($("player1Low").checked) {
+                if (arr[arr.length - 1] < arr[arr.length - 2]) {
+                    console.log("correct");
+                    $("player1Points").innerHTML++;
+                } else {
+                    console.log("false");
+                }
+            }
+            $("player1Low").checked = false;
+            $("player1High").checked = false;
+        }                            
+                        </code></pre>
+                    <p>
+                        This is now our if else statement which we put inside a function. This checks if the player pressed the higher or lower button and decides which one is the correct one and allocates points depending on the result. We can copy this code snippet and say player2x instead of the current ids, so that we target the player 2 in our HTML.
+                    </p>
+                    <p>
+                        Now we have made a function, which has if else statements in it which will determine which player determines correctly, give them a point and reset the turn. Now we need to declare a winner and reset the game. This we will do simply by saying “If player1 has 3 points, player 1 wins, or else if player 2 has 3 points, player 2 wins.
+                    </p>
+                    <pre>
+                        <code class="language-js">
+        let winner = () => {
+            if($("player1Points").innerHTML == 3){
+                alert("Player 1 WINS!");
+                newGame();
+            }
+            else if($("player2Points").innerHTML == 3){
+                alert("Player 2 WINS!");
+                newGame();
+            }
+        }                            
+                        </code></pre>
+                    <p>
+                        In the snippet above, we use an alert and call the “newGame” function. The alert is used to announce who the player is, but you will get a bit more information about that later. The “newGame” function is a function we made earlier, which sets the points to 0 and resets the roll mechanism in the game.
+                    </p>
+                </div> <!-- lesson7 -->

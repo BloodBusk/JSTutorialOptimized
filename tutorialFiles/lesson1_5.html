@@ -1,0 +1,26 @@
+<div id="lesson1-5" class="lesson">
+    <h3>Lesson 1.5</h3>
+    <h2>A simple trick that can make alle the difference</h2>
+    <p>
+        Throughout our code, we have been using <i>$</i> like this:
+    </p>
+    <pre>
+                        <code class="language-js">
+        $("roll");
+                        </code></pre>
+    <p>
+        This is a smart way of writing code, by decreasing the amount of code you need to write, every time you need to fetch an id from your HTML. We make the <i>$</i> into a function:
+    </p>
+    <pre>
+                        <code class="language-js">
+        let $ = (x) => {
+            reurn document.getElementById(x);
+        }
+                        </code></pre>
+    <p>
+        This is our <i>$</i> function. In this function we make it return the getElementById method, one of the most used methods (which we use to fetch ids from our html), to cut down the time it takes to write it.
+    </p>
+    <p>
+        <i>Simple, yet effective.</i>
+    </p>
+</div> <!-- lesson3 -->

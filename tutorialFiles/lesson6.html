@@ -1,0 +1,72 @@
+                <div id="lesson6" class="lesson">
+                    <h3>Lesson 6</h3>
+                    <h2>Arrays</h2>
+                    <p>
+                        How do we make an array, and what do we use it for?
+                    </p>
+                    <p>
+                        Arrays in JavaScript are used to store multiple value. Arrays can store Integers, Strings and Booleans. Arrays are identified with the brackets [] symbol. We use arrays in our game to store multiple dice throw values.
+                    </p>
+                    <p>
+                        In our game, we use arrays in four ways. First we use them to declare an empty array. There are two ways to declare an empty array:
+                        <pre>
+                        <code class="language-js">
+        let arr = [];
+
+        // or
+
+        let arr = new Array();
+
+        // Many programmers use the first way because it is shorter. 
+                        </code></pre>
+                        <p>
+                            Second for adding values to the empty array. To do this we use the push method. The method push adds a new item to the end of an array. To show this we try and push some values into our array.
+                        </p>
+                        <pre>
+                        <code class="language-js">
+        arr.push(2);
+        arr.push(3);
+        arr.push(4);
+                        </code></pre>
+                        <p>
+                            Now the array would have three values pushed into the array, so now the array looks like this:
+                        </p>
+                        <pre>
+                        <code class="language-js">
+        [2, 3, 4]
+                        </code></pre>
+                        <p>
+                            Note that each individual value has a place in the array called indexes. Starting from 0 and increasing. So the value 2 was placed at index 0, the value 3 was placed at index 1, the value 4 was placed at index 2 and so on.
+                        </p>
+                        <p>
+                            In order to store our dice values we randomly throw from the previous lesson. We could push the value that we get from the random number that is stored in our variable and push it into our array.
+                        </p>
+                        <pre>
+                        <code class="language-js">
+        arr.push(rollIt(1, 10));
+                        </code></pre>
+                        <p>
+                            This would store a random number between 1 and 10 into our array.
+                        </p>
+                        <p>
+                            Thirdly we use them for locating values in the array. In our game, we have to check whether the number generated next is higher or lower than the previous number so we have to be able to locate the last indexed value. To locate the last indexed value we can use the “length” property.
+                        </p>
+                        <pre>
+                        <code class="language-js">
+        arr.length;
+                        </code></pre>
+                        <p>
+                            This shows the length of the array, in our previous example we had pushed 3 values into the array so the length of the array would be 3. However, there are no values located at the third index so we cannot use this is obtain the value at index 3. Therefore, in order for us to get the value at index 2, we can subtract 1 to the length of the array, and therefore have access to the very last value in the array.
+                        </p>
+                        <pre>
+                        <code class="language-js">
+        arr.length - 1;
+                        </code></pre>
+                        <p>
+                            Lastly for emptying the array. We often want to reset arrays when we restart games. There is a very simple way to do this, and it is done in the same way as declaring an array.
+                        </p>
+                        <pre>
+                        <code class="language-js">
+        let arr = [];
+                        </code></pre>
+                </div> <!-- lesson6 -->

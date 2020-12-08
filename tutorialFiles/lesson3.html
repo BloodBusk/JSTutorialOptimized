@@ -1,0 +1,99 @@
+                <div id="lesson3" class="lesson">
+                    <h3>Lesson 3</h3>
+                    <h2>Functions</h2>
+                    <p>
+                        Functions is a very important part of JavaScript! Functions make the website exciting and you can manipulate everything on your website, which makes it fun and exciting. But before we can do any function I would like to declare 2 ways to store your variables.
+                    </p>
+                    <p>
+                        Local variables and Global variables.
+                    </p>
+                    <p>
+                        <strong>Global variables</strong> should always be declared at the top of the javascript. We only use global variables when we will use the same variable, more than one time in the javascript.
+                    </p>
+                    <p>
+                        <strong>Work smarter, not harder!</strong> With global variables we can make sure we only have to write everything one time. I'll show you an example. Every time we want to get an element from the html we want to make a variable which contains the html data. We write:
+                    </p>
+                    <pre>
+                        <code class="language-js">
+        let roll = document.getElementById(&#x22;roll&#x22;);
+                        </code></pre>
+                    <p>
+                        And if we use the function we learned in Lesson 1.5, we can simply input:
+                    </p>
+                    <pre>
+                        <code class="language-js">
+        $(&#x22;roll&#x22;);
+                        </code></pre>
+                    <p><br></p>
+                    <p>
+                        <strong>Local variables</strong> are located in a function and will only be used once. The reason we write local variables is it´s easy and even easier to find again because everything that is needed is written in that function. Instead of we need to find the variables in the top everytime. But let us take a look at the function.
+                    </p>
+                    <p>
+                        Before we begin there is 3 different method to make a function for example:
+                    </p>
+                    <pre>
+                        <code class="language-js">
+        const rollIt = (min, max) =&#x3E; {
+            &#x9;//actions
+        };
+                
+        Function rollIt (min, max) {
+            &#x9;//actions
+        };
+                
+        Const rollIt = function (min, max) {
+            &#x9;//actions
+        };                      
+                        </code></pre>
+                    <p>
+                        These functions do exactly the same, and you can start writing it however you want to. And the example, is actually the first function we need to make for the game.
+                    </p>
+                    <p>
+                        <strong>But let's break the function down so we can understand what they say – yes!</strong>
+                    </p>
+                    <p>
+                        We name the function (We do that so we can call the function later). In this case we call the function “rollit”.
+                    </p>
+                    <p>
+                        Between the parentheses, we call them parameters. we wrote for example “min, max”. we do that to let JavaScript scope know when to use it. In this case when we talk about minimum and maximum, so we can replace them later by a minimum number and maximum number. But many times it remains empty because the function is used when called. I will show you later how.
+                    </p>
+                    <p>
+                        Between the {} is what the function should do, also called action. In this case it involves making 2 variables, which calculate a random number as described before.
+                    </p>
+                    <p>
+                        And afterward we return the result called “final”.
+                    </p>
+                    <p>
+                        <strong>Let's make some magic on the website!</strong>
+                    </p>
+                    <p>
+                        Now we want to show the world what we calculated. We do that by making a function, which changes the data inside the html document, let's call the function “roll”. Replace it with the result of the previous function called “rollit”. While we are at it. Why not use the new method we got from the global variable. THh code would look like this:
+                    </p>
+                    <pre>
+                        <code class="language-js">
+        const roll = () =&#x3E; {
+            return $(&#x22;roll&#x22;).innerHTML = rollIt(1, 10);
+        }
+                        </code></pre>
+                    <p>
+                        Let's break it down one more time! We make a function the variable name of the function is roll. We return the element inside in the html by id “roll”. That's why we wrote “innerHtml” after that we replaced it with:/= the previous function random number between 1 and 10. - Great success!
+                    </p>
+                    <p>
+                        <strong>Let's try again one more time!</strong>
+                    </p>
+                    <p>
+                        Now let's make a function that reset the game.
+                    </p>
+                    <p>
+                        Let's call the function “new game”. And we need to change both players' points to 0 and in the random number field. We need to make it say “roll me” like it says when you begin your game and reset the arrays to nothing so the push counts can start over again. Don't worry about how we are going to count and so on, we will do that later with the if statements. But when you have written the code, you should get something like this:
+                    </p>
+                    <pre>
+                        <code class="language-js">
+        let newGame = () =&#x3E; {
+            $(&#x22;player1Points&#x22;).innerHTML = 0;
+            $(&#x22;player2Points&#x22;).innerHTML = 0;
+            $(&#x22;roll&#x22;).innerHTML = &#x22;Roll Me!&#x22;;
+            arr = [];
+        }                            
+                        </code></pre>
+                </div> <!-- lesson3 -->

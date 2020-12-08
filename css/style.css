@@ -1,0 +1,152 @@
+/* JS Tutorial */
+/* Stylesheet */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+ul, ol{
+    margin:0;
+    padding:0;
+}
+
+img{
+    max-width:100%;
+    max-height:100%;
+    width:auto;
+    height:auto;
+}
+
+
+/* header */
+
+header{
+    background-color:#e17055;
+    width:100vw;
+    position:fixed;
+    display:flex;
+    justify-content:center;
+}
+
+#logo a img{
+    width:100px;
+    margin:16px;
+}
+
+/* index */
+
+#index-main{
+    background-image:url("img/hero.png");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.selectors{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    width:50%;
+}
+
+.selector{
+    height:200px;
+    width:200px;
+    background-color:#F5C64D;
+    color: snow;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    border-radius:50px;
+}
+
+.selector:hover {
+    transform:scale(1.3);
+    transition:.3s ease-in-out;
+    background-color:#FA9B41;
+    border-radius:20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.icon {
+    font-size: 6rem;
+    margin: 4px 0;
+}
+
+
+/* tutorial */
+
+#tutorial{
+    display:flex;
+}
+
+#menu{
+    background-color:#00CEC9;
+    height:100vh;
+    position:fixed;
+    padding:300px 100px;
+    color:#fff;
+    text-align:center;
+    width:20vw;
+    overflow-y: scroll;
+}
+
+#menu h5{
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+#menu ul{
+    list-style:none;
+    font-size:20px;
+}
+
+#menu ul li{
+    padding:5px 0;
+}
+
+#menu ul a{
+    color: white;
+    font-size: 0.9em;
+}
+
+#lessons{
+    margin:200px 10vw 0 25vw;
+}
+
+#lessons h2{
+    font-size:34px;
+    padding:5px 0 20px;
+}
+
+#lessons p{
+    margin:20px 0;
+}
+
+.lesson{
+    margin-top:80px;
+}
+
+.lesson pre{
+    margin-bottom:20px;
+}
+
+#lesson1-5 h2{
+    font-size:24px;
+}
+
+#the-end{
+    text-align:center;
+    margin:80px 0 60px;
+}

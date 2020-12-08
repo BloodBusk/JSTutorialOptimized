@@ -1,0 +1,43 @@
+<div id="lesson2" class="lesson">
+    <h3>Lesson 2</h3>
+    <h2>Mathematical operators</h2>
+    <p>
+        <i>“Hey! You said no math.”</i> - No, I didn’t. But luckily for us JavaScript has our backs. It has math build into it and you can use it to calculate stuff for you.
+    </p>
+    <p>
+        In this tutorial we will need to tell JavaScript to do some simple calculations for us.
+        <br>The operators we will need to know are:
+    </p>
+    <!-- Tabel over "math operators" -->
+    <p>
+        In our code we will use it to calculate a random number from a button click using the build-in <i>Math()</i>-method and when we cover <i>if</i>-statements to check if a value is higher or lower than something else.
+    </p>
+    <p>
+        <strong>Example 1</strong>
+    </p>
+    <pre>
+                        <code class="language-js">
+        const rollIt = (min, max) =&#x3E; {
+            let rando = Math.random() * max;
+            let final = Math.floor(rando) + min;
+            return final;
+        };
+                        </code></pre>
+    <p><i>Here we used * and + to calculate variables with each other.</i></p>
+    <p>
+        <strong>Example 2</strong>
+    </p>
+    <pre>
+                        <code class="language-js">
+        if (document.getElementById(&#x22;player1Low).checked) {
+            if (arr[arr.length - 1] &#x3C; arr[arr.length - 2]) {
+                console.log(&#x22;correct&#x22;);
+                document.getElementById(&#x22;player1Points&#x22;).innerHTML++;
+            } else {
+                console.log(&#x22;false&#x22;);
+            }
+        }
+                        </code></pre>
+    <p><i>Here is an example of checking whether or not one statement is less than (<) the other.</i>
+    </p>
+</div> <!-- lesson2 -->

@@ -1,0 +1,74 @@
+<div id="lesson0" class="lesson">
+    <h3>HTML/CSS</h3>
+    <h2>The HTML used for this project</h2>
+    <p>
+        The secret first step of this tutorial is: <strong>Learn basic HTML and CSS</strong>. So for this tutorial we are assuming that you already know how this works.
+    </p>
+    <p>
+        So, just to make it easier we've put in the necessary HTML needed, and you can do your own styling. If it doesn't make sense - go brush up on your basics.
+    </p>
+    <p>
+        <strong>HTML</strong>
+    </p>
+    <pre>
+                        <code class="language-html">
+        &#x3C;!DOCTYPE html&#x3E;
+        &#x3C;html lang=&#x22;en&#x22;&#x3E;
+        &#x3C;head&#x3E;
+            &#x3C;meta charset=&#x22;UTF-8&#x22;&#x3E;
+            &#x3C;meta name=&#x22;viewport&#x22; content=&#x22;width=device-width, initial-scale=1.0&#x22;&#x3E;
+            &#x3C;title&#x3E;Higher or Lower&#x3C;/title&#x3E;
+            &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;css/game.css&#x22;&#x3E;
+        &#x3C;/head&#x3E;
+
+        &#x3C;body&#x3E;
+            &#x3C;header&#x3E;
+                &#x3C;h1&#x3E;Higher or Lower&#x3C;/h1&#x3E;
+            &#x3C;/header&#x3E;
+
+            &#x3C;main&#x3E;
+                &#x3C;section id=&#x22;playerOne&#x22;&#x3E;
+                    &#x3C;h3&#x3E;Player 1&#x3C;/h3&#x3E;
+                    &#x3C;div class=&#x22;controls&#x22;&#x3E;
+                        &#x3C;label&#x3E;Higher
+                            &#x3C;input type=&#x22;radio&#x22; class=&#x22;controlBtns&#x22; id=&#x22;player1High&#x22; /&#x3E;
+                        &#x3C;/label&#x3E;
+                        &#x3C;p&#x3E;Points:&#x3C;span id=&#x22;player1Points&#x22;&#x3E;0&#x3C;/span&#x3E;&#x3C;/p&#x3E;
+                        &#x3C;label&#x3E;Lower
+                            &#x3C;input type=&#x22;radio&#x22; class=&#x22;controlBtns&#x22; id=&#x22;player1Low&#x22; /&#x3E;
+                        &#x3C;/label&#x3E;
+                    &#x3C;/div&#x3E;
+                &#x3C;/section&#x3E;
+                &#x3C;section id=&#x22;numberGen&#x22;&#x3E;
+                    &#x3C;h2&#x3E;Community Number&#x3C;/h2&#x3E;
+                    &#x3C;p id=&#x22;explainer&#x22;&#x3E;
+                        Roll a random number using the button below.&#x3C;br&#x3E;
+                        Afterwards each player guess whether the next number is higher or lower.
+                    &#x3C;/p&#x3E;
+                    &#x3C;div class=&#x22;controls&#x22;&#x3E;
+                        &#x3C;button id=&#x22;rollBtn&#x22;&#x3E;Roll Number&#x3C;/button&#x3E;
+                        &#x3C;p id=&#x22;roll&#x22;&#x3E;Roll Me!&#x3C;/p&#x3E;
+                    &#x3C;/div&#x3E;
+                &#x3C;/section&#x3E;
+                &#x3C;section id=&#x22;playerTwo&#x22;&#x3E;
+                    &#x3C;h3&#x3E;Player 2&#x3C;/h3&#x3E;
+                    &#x3C;div class=&#x22;controls&#x22;&#x3E;
+                        &#x3C;label&#x3E;Higher
+                            &#x3C;input type=&#x22;radio&#x22; class=&#x22;controlBtns&#x22; id=&#x22;player2High&#x22; /&#x3E;
+                        &#x3C;/label&#x3E;
+                        &#x3C;p&#x3E;Points:&#x3C;span id=&#x22;player2Points&#x22;&#x3E;0&#x3C;/span&#x3E;&#x3C;/p&#x3E;
+                        &#x3C;label&#x3E;Lower
+                            &#x3C;input type=&#x22;radio&#x22; class=&#x22;controlBtns&#x22; id=&#x22;player2Low&#x22; /&#x3E;
+                        &#x3C;/label&#x3E;
+                    &#x3C;/div&#x3E;
+                &#x3C;/section&#x3E;
+            &#x3C;/main&#x3E;
+
+            &#x3C;footer&#x3E;
+                &#x3C;h5&#x3E;Copyright&#x3C;/h5&#x3E;
+            &#x3C;/footer&#x3E;
+
+            &#x3C;script src=&#x22;js/app.js&#x22;&#x3E;&#x3C;/script&#x3E;
+        &#x3C;/body&#x3E;&#x3C;/html&#x3E;
+                        </code></pre>
+</div> <!-- html/css -->

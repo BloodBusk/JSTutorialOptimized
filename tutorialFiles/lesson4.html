@@ -1,0 +1,28 @@
+<div id="lesson4" class="lesson">
+    <h3>Lesson 4</h3>
+    <h2>addEventListener</h2>
+    <p>
+        So the event listener is very simple! The reason we use events listeners is to make the browser look or listen at what we tell it to listen for. For example in the game we have the roll the dice when we press the button. We need our script to look after when we press it. We do that by:
+    </p>
+    <pre>
+                        <code class="language-js">
+        $(&#x22;rollBtn&#x22;).addEventListener(&#x27;click&#x27;, () =&#x3E; {
+            And then add all functions we want to display when clicked.
+        });                            
+                        </code></pre>
+    <p>
+        There are multiple ways to write eventlistener.
+    </p>
+    <pre>
+                        <code class="language-js">
+        $(&#x22;rollBtn&#x22;).addEventListener(&#x27;click&#x27;, () =&#x3E; {
+            &#x9;//actions
+        });
+        
+        $(&#x22;rollBtn&#x22;).addEventListener(&#x27;click&#x27;, function() {
+            &#x9;//actions
+        });
+        
+        $(&#x22;rollBtn&#x22;).addEventListener(&#x27;click&#x27;, nameofFunction);                            
+                        </code></pre>
+</div> <!-- lesson4 -->

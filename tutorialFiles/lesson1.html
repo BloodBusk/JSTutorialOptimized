@@ -1,0 +1,21 @@
+<div id="lesson1" class="lesson">
+    <h3>Lesson 1</h3>
+    <h2>Variables</h2>
+    <p>
+        One of the first things you will have to know if you want to do anything in JavaScript is to know about variables. These may sound like complicated math terms but they’re not. Rest easy, my friend.
+        <br>Declaring a variable is how we grab certain elements from our HTML and insert it in our JavaScript so we can manipulate it. In ES6 (which is the latest iteration of JavaScript) there are multiple ways to declare a variable whereas in previous years you only had one (the <i>var</i> keyword).
+    </p>
+    <p>
+        Say you had made a button in HTML saying “Click me” and given it an <i>id</i> of <i>click-button</i>. To pull that button into our JavaScript, so we can manipulate it and make it do stuff when we click it, we can use two keywords; <i>let</i> or <i>const</i>. The difference in using these is we can’t reassign the value of a <i>const</i> later on as it is a constant, whereas <i>let</i> is flexible.
+        In this tutorial we will be using a mix of both.
+    </p>
+    <p>
+        To grab our <i>click-button</i> we could go:
+    </p>
+    <pre>
+                        <code class="language-js">
+        let ourBtn = document.getElementById(&#x2018;click-button&#x2019;);
+                        </code></pre>
+    <p>It is important to know for new users that the label (name) we gave our variable could be nearly anything. In this case we called it <i>ourBtn</i> and that is how we from now on refer to our <i>click-button</i> in our tutorial.</p>
+    <p><strong>Terminology note:</strong> Later on we will be declaring variables inside the code-block of <i>functions</i>. These are called <i>local variables</i> where the ones declared outside a code-block is called a <i>global variable</i>.</p>
+</div> <!-- lesson1 -->

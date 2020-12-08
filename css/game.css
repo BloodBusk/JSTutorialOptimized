@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+main {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    height: 85vh;
+    color: lightslategray;
+}
+
+main > section {
+    width: 33%;
+    margin: 0 20px;
+    box-shadow: 2px 0 9px 2px #aaaaaa;
+    border-radius: 2px;
+}
+
+#playerOne {
+    height: 50vh;
+    margin: auto 0;
+}
+
+#cpu {
+    height: 50vh;
+    margin: auto 0;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+}
+
+.controls > p {
+    margin: 20px 0;
+}
+
+.controls label{
+    background-color: teal;
+    padding: 10px 30px;
+    color: whitesmoke;
+    cursor: pointer;
+    border: none;
+    border-radius: 0;
+}
+
+.controls input{
+    opacity: 1;
+}
+
+h3 {
+    text-align: center;
+    margin: 50px 0 50px 0;
+}
+
+#numberGen {
+    height: 80%;
+    margin-top: 40px;
+}
+
+h2 {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 2rem;
+    margin-top: 60px;
+}
+
+#explainer {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto 50px auto;
+}
+
+#roll {
+    font-size: 6rem;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#goBack{
+    text-align: center;
+    margin-top:10px;
+}

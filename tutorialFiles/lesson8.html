@@ -1,0 +1,35 @@
+                <div id="lesson8" class="lesson">
+                    <h3>Lesson 8</h3>
+                    <h2>Alerts</h2>
+                    <p>
+                        An alert is a pop-up, that appears when executed in your script. This could be used in many ways but is often used to make sure information gets properly through to the user. In our game, it would be nice to know who wins, right? Making an alert is simple, the only code you need to write is:
+                    </p>
+                    <pre>
+                        <code class="language-js">
+        function useAlert(){
+            alert("This is our alert message !");
+        }                            
+                        </code></pre>
+                    <p>
+                        Using this function with a for example a button, would trigger an alert which states “This is our alert message!”.
+                    </p>
+                    <p>
+                        It looks quite simple, and we used it in our lesson about “If Else Statements” to declare who is the winner, here is the code snippet:
+                    </p>
+                    <pre>
+                        <code class="language-js">
+        let winner = () => {
+            if($("player1Points").innerHTML == 3){
+                    alert("Player 1 WINS!");
+                    newGame();
+            }
+            else if($("player2Points").innerHTML == 3){
+                    alert("Player 2 WINS!");
+                    newGame();
+            }
+        }                            
+                        </code></pre>
+                    <p>
+                        In this If else statement we simply put an alert method inside the statement, to declare who wins based on who reaches 3 points first.
+                    </p>
+                </div> <!-- lesson8 -->

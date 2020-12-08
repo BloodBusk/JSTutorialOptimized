@@ -1,0 +1,66 @@
+                <div id="lesson5" class="lesson">
+                    <h3>Lesson 5</h3>
+                    <h2>Random Number</h2>
+                    <p>
+                        How to you generate a random number and what do we use it for?
+                    </p>
+                    <p>
+                        In JavaScript, to get a random number between 0 and 1 we can use the function Math.random(), but in order to get a result between 1 and 10 we would have to add a couple things to a random number function.
+                    </p>
+                    <p>
+                        In our game we want to use it for:
+                        <ol>
+                            <li>
+                                Generating a random number to display as a result for rolling the dice.
+                            </li>
+                        </ol>
+                    </p>
+                    <p>
+                        Generating a random number can be explained in two parts. Let’s start with explaining exactly what Math.random() does. Say you have some code that sets a variable to be equal Math.random() and print it out.
+                    </p>
+                    <pre>
+                        <code class="language-js">
+        let randomNumber = Math.random();
+        console.log(randomNumber);&#x9;     // prints out result of randomNumber
+                        </code></pre>
+                    <p>The result would always equal a number between 0 and 1, as a decimal. But if we want a number between 0 and 10 we would have to multiply 10 to Math.random().</p>
+                    <pre>
+                        <code class="language-js">
+        let randomNumber = Math.random() * 10;
+        console.log(randomNumber);
+                        </code></pre>
+                    <p>
+                        Finally, to be able to get a number between 1 and 10, we would have to add the minimum number we would want shown.
+                    </p>
+                    <pre>
+                        <code class="language-js">
+                let randomNumber = Math.random() * 10 + 1;
+                        </code></pre>
+                    <p>
+                        However, this would also give a result above 10. In order to correct this we move on to the second part of the explanation.
+                    </p>
+                    <p>
+                        The second part we will be explaining the Math.floor() function. Math.floor() returns an integer value rounded down. So say you have a variable that has a value of 10.4, Math.floor() rounds that value down to 10. We can use this on our random number to generate a number that is exactly between 1 and 10.
+                    </p>
+                    <pre>
+                        <code class="language-js">
+        let randomNumber = Math.floor(Math.random() * 10 +1);
+                        </code></pre>
+                    <p>
+                        Wrap it all inside Math.floor() and we get a value between 1 and 10.
+                    </p>
+                    <p>
+                        In our game, we can use this as a function to roll a die so it becomes easier to access and change values wherever we use it. Make a function with 2 parameters, min value and max value.
+                    </p>
+                    <pre>
+                        <code class="language-js">
+        const rollIt = (min, max) =&#x3E; {
+            &#x9;let rando = Math.random() * max;
+            &#x9;let final = Math.floor(rando) + min;
+            &#x9;return final;
+        }                                
+                        </code></pre>
+                    <p>
+                        Now whatever we want our interval to be, is to be written inside the parameters of the function, and can be used anywhere.
+                    </p>
+                </div> <!-- lesson5 -->
